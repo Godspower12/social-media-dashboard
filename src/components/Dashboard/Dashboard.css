@@ -14,6 +14,7 @@ header .header-right {
     text-align: left;
     align-items: left;
     margin-left: 20px;
+    margin-top: 20px;
     
 }
 header .header-right p {
@@ -30,6 +31,8 @@ header .header-right p {
  justify-content: flex-start;
  margin-left: 20px;
  color: grey;
+ margin-top: 10px;
+ font-weight: bold;
 }
 
 
@@ -155,7 +158,7 @@ font-weight: bold;
         gap: 10px;
         padding: 10px 10px;
         height: auto;
-        margin-left: -20px;
+        margin-left: -2px;
     }
     /* .header-right {
         font-size: small;
