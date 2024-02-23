@@ -27,7 +27,7 @@ export const Data = [
     id: 4,
     Name: "@realnathanf",
     Icon: "../icon-youtube.svg",
-    Followers: "8239k",
+    Followers: "8239",
     Type: "FOLLOWERS",
      view: "144"
 },
@@ -58,7 +58,7 @@ export const Overview = [
     {
     id: 4,
     Title: "Profile Views",
-    Icon: "../icon-instragram.svg",
+    Icon: "../icon-instagram.svg",
     Number: "52k",
     percentage: "1375%"
 },

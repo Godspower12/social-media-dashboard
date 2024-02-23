@@ -8,31 +8,45 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: hsl(232, 19%, 15%);
+    padding-bottom: 10%;
 }
 header .header-right {
     text-align: left;
     align-items: left;
     margin-left: 20px;
     margin-top: 20px;
-    
+}
+
+
+
+.white-bg {
+  background: hsl(230, 22%, 74%);
+}
+
+header .header-right h1 {
+    font-size: 1.5rem;
 }
 header .header-right p {
-    color: grey;
+    color: rgb(161, 160, 160);
    
 }
 
 .dashboard-contents{
     margin-bottom: 30px;
-    /* background:blue */
+    margin-top: -10%;
 }
 .dashboard-contents .overview{
     display: flex;
  justify-content: flex-start;
- margin-left: 20px;
- color: grey;
+ margin-left: 40px;
+ /* color: white; */
  margin-top: 10px;
  font-weight: bold;
+
 }
 
 
@@ -58,18 +72,34 @@ header .header-right p {
   border-radius: 10px;
  
   font-weight: bold;
-  /* padding: 10px; */
 }
 .dashboard-contents  .contents-1 .card .card-item,
 .dashboard-contents  .contents-2 .card .card-item
 {
-    /* background: hsl(227, 47%, 96%); */
-    /* color: black; */
     display: flex;
     width: 100%;
-    padding: 10px 10px;
     flex-direction: column;
+    gap: 1px;
+    justify-content: space-between;
     height: auto;
+ 
+}
+.dashboard-contents  .contents-2 .card .card-item
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1px;
+    justify-content: space-between;
+    height: auto;
+ 
+}
+
+
+.dashboard-contents  .contents-2 .card .card-item h1{
+font-weight: bolder;
+font-size: 2rem;
  
 }
 .dashboard-contents  .contents-1 .card .card-item p{
@@ -77,9 +107,53 @@ font-weight: lighter;
  
 }
 .dashboard-contents  .contents-1 .card .card-item span{
-color: green;
 font-weight: bold;
  
+}
+.grad {
+    background: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+    /* background: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%); */
+}
+.youtube {
+    background: hsl(348, 97%, 39%);
+}
+.youtube-text {
+    color: hsl(348, 97%, 39%); 
+}
+.letter {
+    letter-spacing: 5px;
+}
+
+.darkMode-bg {
+    background: hsl(230, 17%, 14%)
+}
+.darkMode-card {
+    background: hsl(228, 28%, 20%);
+    cursor: pointer;
+}
+.darkMode-card:hover {
+    background: hsl(230, 27%, 30%);
+    
+}
+.darkMode-text {
+color: hsl(0, 0%, 100%)
+}
+
+.darkMode-switch {
+background: hsl(163, 72%, 41%)
+}
+.darkMode-switch-btn {
+    background: hsl(232, 19%, 15%);
+}
+
+
+.green-border {
+    color: hsl(163, 72%, 41%)
+}
+
+.text-color {
+    color: rgb(161, 160, 160);
+    font-weight: bolder;
 }
 
 .dashboard-contents  .contents-1 .card .title{
@@ -89,29 +163,17 @@ font-weight: bold;
  gap: 2px;
  font-weight: lighter;
 }
-/* .dashboard-contents  .contents-1 .card .top-border{
- background: hsl(208, 92%, 53%);
- width: 100%;
- height: 4px;
- position: absolute;
- top: 0;
-} */
 
-
-/* .dashboard-contents  .contents-2 .card
-{
-  width: 250px;
-  height: 100px;
-  border-radius: 10px;
-  background: hsl(227, 47%, 96%);
-  font-weight: bold;
-  padding: 20px 20px;
-  position: relative;
-} */
 
 
 .dashboard-contents  .contents-2 .card .title,
 .dashboard-contents  .contents-2 .card .numbers
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-contents  .contents-2 .card .numbers p 
 {
     display: flex;
     justify-content: space-between;
@@ -147,6 +209,9 @@ font-weight: bold;
     }
 }
 @media  screen and (max-width: 425px) {
+    .Dashboard-wrapper {
+        background: red;
+    }
     .dashboard-contents  .contents-1,
     .dashboard-contents  .contents-2
     {
@@ -160,7 +225,8 @@ font-weight: bold;
         height: auto;
         margin-left: -2px;
     }
-    /* .header-right {
-        font-size: small;
-    } */
+    
+    .header-left {
+     width: 100%;
+    }
 }

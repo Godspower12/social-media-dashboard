@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       backgroundColor: {
       'wite': "hsl(227, 47%, 96%)" ,
+      'header': "hsl(232, 29%, 95%)" ,
+      'cardLight': "hsl(227, 47%, 92%)" ,
+      'cardLight-hover': "hsl(227, 47%, 88%)" ,
       },
+      
     },
   },
   plugins: [],
